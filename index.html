@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<form class="header-search"><input type="text" name="search" placeholder="Поиск по сайту"></form>
+			<form class="header__search" method="GET"><input class="header__search__input" type="text" name="search" placeholder="Поиск по сайту"></form>
 			<ul class="authorization">
 				<li class="sign-in"><button type="button">Войти</button></li>
 			</ul>
@@ -51,7 +51,7 @@
 						<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.
 							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 						</p>
-						<a href="catalog.html" class="basic">Подробнее</a>
+						<a href="catalog.html" class="button">Подробнее</a>
 						<ul class="slider-list">
 							<li><span>8.5 м</span><p>Длина палки</p></li>
 							<li><span>5 кг</span><p>Вес палки</p></li>
@@ -69,7 +69,7 @@
 						<p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы 
 						не пропускать занятия и соблюдать диету.
 						</p>
-						<a href="catalog.html" class="basic">Подробнее</a>
+						<a href="catalog.html" class="button">Подробнее</a>
 						<ul class="slider-list">
 							<li><span>48 часов</span><p>Без подзарядки</p></li>
 						</ul>
@@ -86,7 +86,7 @@
 						<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
 							мощным лазером, замаскированным под стандартную камеру.
 						</p>
-						<a href="catalog.html" class="basic">Подробнее</a>
+						<a href="catalog.html" class="button">Подробнее</a>
 						<ul class="slider-list">
 							<li><span>800 м</span><p>Дальность полета</p></li>
 							<li><span>50 м</span><p>Радиус поражения</p></li>
@@ -104,10 +104,10 @@
 			</ul>
 			<div class="services">
 				<h2>Сервисы</h2>
-				<ul class="services-tabs-link">
-					<li><a href="#delivery">Доставка</a></li>
-					<li><a href="#guarantee">Гарантия</a></li>
-					<li><a href="#credit">Кредит</a></li>
+				<ul class="services__list">
+					<li class="services__item _active"><a href="#delivery">Доставка</a></li>
+					<li class="services__item"><a href="#guarantee">Гарантия</a></li>
+					<li class="services__item"><a href="#credit">Кредит</a></li>
 				</ul>
 				<div class="services-tabs-content">
 					<div class="tab-delivery">
@@ -139,35 +139,53 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#" class="basic">Подробнее о нас</a>
+				<a href="#" class="button">Подробнее о нас</a>
 			</div>
 			<div class="contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<a href="https://yandex.ru/maps"><img src="img/map.jpg" alt="Карта"></a>
-				<button type="button" class="basic">Напишите нам</button>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12d18511b65bf53d85326f9315ddcad8d33e99e19a2bd34443236854033f4752&amp;source=constructor" width="560" height="240" frameborder="0"></iframe>
+				<button type="button" class="button">Напишите нам</button>
 			</div>
 		</main>
+		<div class="form-write-us">
+			<form class="form" action="https://echo.htmlacademy.ru" method="GET">
+				<button type="button" class="form__close"></button>
+				<label class="form__label">
+					Ваше имя:
+					<input type="text" id="name" name="name" placeholder="Имя Фамилия">
+				</label>
+				<label class="form__label">
+					Ваш email:
+					<input type="text" id="email" name="email" placeholder="email@mail.ru">
+				</label>
+				<label class="form__label">
+					Текст письма:
+					<textarea rows="5" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+				</label>
+				<button type="submit" class="button form__submit"></button>
+			</form>
+		</div>
 		<footer class="footer">
-			<a class="footer-logo"><img src="img/logo-yellow.png" alt="Device"></a>
-			<ul class="footer-user-nav">
+			<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
+			<ul class="footer__user-nav">
 				<li><button type="button">Войти</button></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>
 			</ul>
-			<p class="footer-address">г. Москва, ул. Строителей, 15</p>
-			<ul class="footer-nav">
+			<p class="footer__address">г. Москва, ул. Строителей, 15</p>
+			<ul class="footer__nav">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<p class="footer-phone">Тел.: +7(495) 495-95-95</p>
-			<ul class="footer-social">
-				<li><a href="#" class="social-button">Фейсбук</a></li>
-				<li><a href="#" class="social-button">Инстаграмм</a></li>
-				<li><a href="#" class="social-button">Твиттер</a></li>
+			<p class="footer__phone">Тел.: +7(495) 495-95-95</p>
+			<ul class="footer__social">
+				<li><a href="#" class="footer__social__button">Фейсбук</a></li>
+				<li><a href="#" class="footer__social__button">Инстаграмм</a></li>
+				<li><a href="#" class="footer__social__button">Твиттер</a></li>
 			</ul>
-			<a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer_html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
 		</footer>
 	</body>
 </html>

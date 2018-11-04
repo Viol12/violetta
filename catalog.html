@@ -40,74 +40,80 @@
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
 				<li  class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
-				<li class="breadcrumbs__item_active">Моноподы для селфи</li>
+				<li class="breadcrumbs__item _active">Моноподы для селфи</li>
 			</ul>
 			<div class="filter">
-				<div>
-					<p class="filter_title">Фильтр:</p>
+				<div class="filter__title">
+					<p>Фильтр:</p>
 				</div>
-				<form>
-					<p>Стоимость</p>
-					<input type="range" class="filter-price">
-					<p>Цвет</p>
-					<label><input type="checkbox" name="black">Черный</label>
-					<label><input type="checkbox" name="white">Белый</label>
-					<label><input type="checkbox" name="blue">Синий</label>
-					<label><input type="checkbox" name="red">Красный</label>
-					<label><input type="checkbox" name="pink">Розовый</label>
-					<p>Bluetooth</p>
-					<label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
-					<label><input type="radio" name="bluetooth" value="no">Нет</label>
-					<button type="button" class="basic">Показать</button>
+				<form class="filter__form">
+					<fieldset class="filter__form__category">
+							<legend>Стоимость</legend>
+							<input type="range" class="filter-price">
+					</fieldset>
+					<fieldset class="filter__form__category">
+							<legend>Цвет</legend>
+							<label><input type="checkbox" name="black">Черный</label>
+							<label><input type="checkbox" name="white">Белый</label>
+							<label><input type="checkbox" name="blue">Синий</label>
+							<label><input type="checkbox" name="red">Красный</label>
+							<label><input type="checkbox" name="pink">Розовый</label>
+					</fieldset>
+					<fieldset class="filter__form__category">
+							<legend>Bluetooth</legend>
+							<label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
+							<label><input type="radio" name="bluetooth" value="no">Нет</label>
+							<button type="button" class="basic">Показать</button>
+					</fieldset>
 				</form>
 			</div>
 			<div class="catalog-container">
-				<div class="sorting">
+				<div class="sorting-block">
 					<div class="sort">
 						<p class="sort__title">Сортировка:</p>
-						<span class="sort__item active">По цене</span>
+						<span class="sort__item _active">По цене</span>
 						<span class="sort__item">По типу</span>
 						<span class="sort__item">По популярности</span>
 					</div>
 					<div class="sort-arrows">
-						<button class="sort-arrow_up"></button>
+						<button class="sort-arrow _up"></button>
 						<button class="sort-arrow"></button>
 					</div>
 				</div>
 				<div class="catalog-list-cards">
-					<div class="catalog-prew-card">
-						<button type="button" class="basic">В корзину</button>
-						<button type="button" class="compare">Добавить к сравнению</button>
-						<a href="#"><img src="img/catalog/amateur-selfie.jpg" alt="Любительская селфи-палка"></a>
-						<h2>Любительская селфи-палка</h2>
-						<span class="price">500 руб.</span>
+					<div class="catalog-prew">
+						<button type="button" class="button">В корзину</button>
+						<button type="button" class="catalog-prew__compare">Добавить к сравнению</button>
+						<a href="#"><img src="img/catalog/amateur-selfie.jpg" class="catalog-prew__img" alt="Любительская селфи-палка"></a>
+						<h2 class="catalog-prew__title">Любительская селфи-палка</h2>
+						<span class="catalog-prew__price">500 руб.</span>
 					</div>
 					<div class="catalog-prew-card">
-						<button type="button" class="basic">В корзину</button>
-						<button type="button" class="compare">Добавить к сравнению</button>
-						<a href="#"><img src="img/catalog/professional-selfie.jpg" alt="Профессиональная селфи-палка"></a>
-						<h2>Профессиональная селфи-палка</h2>
-						<span class="price">1 500 руб.</span>
+						<button type="button" class="button">В корзину</button>
+						<button type="button" class="catalog-prew__compare">Добавить к сравнению</button>
+						<a href="#"><img src="img/catalog/professional-selfie.jpg" class="catalog-prew__img" alt="Профессиональная селфи-палка"></a>
+						<h2 class="catalog-prew__title">Профессиональная селфи-палка</h2>
+						<span class="catalog-prew__price">1 500 руб.</span>
 					</div>
 					<div class="catalog-prew-card">
-						<button type="button" class="basic">В корзину</button>
-						<button type="button" class="compare">Добавить к сравнению</button>
-						<a href="#"><img src="img/catalog/unsinkable-selfie.jpg" alt="Непотопляемая селфи-палка"></a>
-						<h2>Непотопляемая селфи-палка</h2>
-						<span class="price">2 500 руб.</span>
+						<button type="button" class="button">В корзину</button>
+						<button type="button" class="catalog-prew__compare">Добавить к сравнению</button>
+						<a href="#"><img src="img/catalog/unsinkable-selfie.jpg" class="catalog-prew__img" alt="Непотопляемая селфи-палка"></a>
+						<h2 class="catalog-prew__title">Непотопляемая селфи-палка</h2>
+						<span class="catalog-prew__price">2 500 руб.</span>
 					</div>
 					<div class="catalog-prew-card">
 						<div class="sticker-new"></div>
-						<button type="button" class="basic">В корзину</button>
-						<button type="button" class="compare">Добавить к сравнению</button>
-						<a href="#"><img src="img/catalog/follow-me-selfie.jpg" alt="Селфи-палка «Следуй за мной»"></a>
-						<h2>Селфи-палка «Следуй за мной»</h2>
-						<span class="price">4 900 руб.</span>
+						<button type="button" class="button">В корзину</button>
+						<button type="button" class="catalog-prew__compare">Добавить к сравнению</button>
+						<a href="#"><img src="img/catalog/follow-me-selfie.jpg" class="catalog-prew__img" alt="Селфи-палка «Следуй за мной»"></a>
+						<h2 class="catalog-prew__title">Селфи-палка «Следуй за мной»</h2>
+						<span class="catalog-prew__price">4 900 руб.</span>
 					</div>
 				</div>
 				<ul class="pagination">
 					<li class="pagination__item"><a href="#">Назад</a></li>
-					<li class="pagination__item active"><a href="#">1</a></li>
+					<li class="pagination__item _active"><a href="#">1</a></li>
 					<li class="pagination__item"><a href="#">2</a></li>
 					<li class="pagination__item"><a href="#">3</a></li>
 					<li class="pagination__item"><a href="#">Вперед</a></li>
@@ -115,25 +121,25 @@
 			</div>
 		</main>
 		<footer class="footer">
-			<a class="footer-logo"><img src="img/logo-yellow.png" alt="Device"></a>
-			<ul class="footer-user-nav">
-				<li><button type="button">Войти</button></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>
-			</ul>
-			<p class="footer-address">г. Москва, ул. Строителей, 15</p>
-			<ul class="footer-nav">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<p class="footer-phone">Тел.: +7(495) 495-95-95</p>
-			<ul class="footer-social">
-				<li><a href="#" class="social-button">Фейсбук</a></li>
-				<li><a href="#" class="social-button">Инстаграмм</a></li>
-				<li><a href="#" class="social-button">Твиттер</a></li>
-			</ul>
-			<a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
-		</footer>
+				<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
+				<ul class="footer__user-nav">
+					<li><button type="button">Войти</button></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>
+				<p class="footer__address">г. Москва, ул. Строителей, 15</p>
+				<ul class="footer__nav">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p class="footer__phone">Тел.: +7(495) 495-95-95</p>
+				<ul class="footer__social">
+						<li><a href="#" class="footer__social__button">Фейсбук</a></li>
+						<li><a href="#" class="footer__social__button">Инстаграмм</a></li>
+						<li><a href="#" class="footer__social__button">Твиттер</a></li>
+				</ul>
+				<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer_html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
+			</footer>
 	</body>
 </html>
