@@ -148,24 +148,6 @@
 				<button type="button" class="button">Напишите нам</button>
 			</div>
 		</main>
-		<div class="form-write-us">
-			<form class="form" action="https://echo.htmlacademy.ru" method="GET">
-				<button type="button" class="form__close"></button>
-				<label class="form__label">
-					Ваше имя:
-					<input type="text" id="name" name="name" placeholder="Имя Фамилия">
-				</label>
-				<label class="form__label">
-					Ваш email:
-					<input type="text" id="email" name="email" placeholder="email@mail.ru">
-				</label>
-				<label class="form__label">
-					Текст письма:
-					<textarea rows="5" id="comment" name="comment" placeholder="В свободной форме"></textarea>
-				</label>
-				<button type="submit" class="button form__submit"></button>
-			</form>
-		</div>
 		<footer class="footer">
 			<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
 			<ul class="footer__user-nav">
@@ -187,5 +169,23 @@
 			</ul>
 			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer_html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
 		</footer>
+		<div class="form-write-us">
+			<form class="form" action="https://echo.htmlacademy.ru" method="GET">
+				<button type="button" class="form__close"></button>
+				<label class="form__label">
+					Ваше имя:
+					<input type="text" name="name" placeholder="Имя Фамилия">
+				</label>
+				<label class="form__label">
+					Ваш email:
+					<input type="text" name="email" placeholder="email@mail.ru">
+				</label>
+				<label class="form__label">
+					Текст письма:
+					<textarea rows="5" name="comment" placeholder="В свободной форме"></textarea>
+				</label>
+				<button type="submit" class="button form__submit"></button>
+			</form>
+		</div>
 	</body>
 </html>
