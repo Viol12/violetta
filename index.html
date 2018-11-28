@@ -3,22 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин гаджетов DEVICE</title>
+		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
 			<form class="header__search" method="GET"><input class="header__search__input" type="text" name="search" placeholder="Поиск по сайту"></form>
 			<ul class="authorization">
-				<li class="sign-in"><button type="button">Войти</button></li>
+				<li class="authorization__sign-in"><button type="button" class="authorization__sign-in__button">Войти</button></li>
 			</ul>
 			<ul class="header-user-nav">
 				<li><a href="#" class="compare">Сравнить</a></li>
 				<li><a href="#" class="basket">Корзина</a></li>
 			</ul>
 			<nav class="nav">
-				<a class="logo"><img src="img/logo.png" alt="Device"></a>
-				<ul class="site-nav">
-					<li class="site-nav-catalog"><a href="catalog.html">Каталог товаров</a>
-						<ul class="site-nav-catalog-item">
+				<a class="nav__logo"><img src="img/logo.png" alt="Device"></a>
+				<ul class="nav__list">
+					<li class="nav__list__catalog"><a href="catalog.html">Каталог товаров<span class="nav__list__catalog__icon"></span></a>
+						<ul class="nav__list__catalog__list">
 							<li><a href="catalog.html">Виртуальная реальность</a></li>
 							<li><a href="catalog.html">Моноподы для селфи</a></li>
 							<li><a href="catalog.html">Экшн-камеры</a></li>
@@ -34,18 +35,18 @@
 			</nav>
 		</header>
 		<main class="container">
-			<h1>Интеренет-магазин гаджетов</h1>
+			<h1 class="hidden">Интеренет-магазин гаджетов</h1>
 			<div class="slider">
-				<ul class="slider-nav">
-					<li><button type="button" class="slider-point"></button></li>
-					<li><button type="button" class="slider-point"></button></li>
-					<li><button type="button" class="slider-point"></button></li>
+				<ul class="slider__nav">
+					<li><button type="button" class="slider__nav__point"></button></li>
+					<li><button type="button" class="slider__nav__point"></button></li>
+					<li><button type="button" class="slider__nav__point"></button></li>
 				</ul>
-				<div class="selfie">
-					<div class="slider-img">
+				<div class="slider__item">
+					<div class="slider__item__img">
 						<img src="img/slider/selfie.png" alt="Селфи палка">
 					</div>
-					<div class="slider-content">
+					<div class="slider__item__content">
 						<h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
 						<span class="slider-number">01</span>
 						<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.
