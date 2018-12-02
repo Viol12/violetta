@@ -7,20 +7,20 @@
 	</head>
 	<body>
 		<header class="header">
-			<form class="header-search"><input type="text" name="search" placeholder="Поиск по сайту"></form>
+			<form class="header__search" method="GET"><input class="header__search__input" type="text" name="search" placeholder="Поиск по сайту"></form>
 			<ul class="authorization">
-				<li class="profile">Валентин Петухов</li>
-				<li class="sign-out"><button type="button">Выйти</button></li>
+				<li class="profile "><span>Валентин Петухов</span></li>
+				<li><button type="button"  class="sign-out">Выйти</button></li>
 			</ul>
 			<ul class="header-user-nav">
-				<li><a href="#" class="compare">Сравнить</a></li>
-				<li><a href="#" class="basket">Корзина</a></li>
+				<li><a href="#" class="compare"><span>Сравнить</span></a></li>
+				<li><a href="#" class="basket"><span>Корзина</span></a></li>
 			</ul>
 			<nav class="nav">
-				<a class="logo"><img src="img/logo.png" alt="Device"></a>
-				<ul class="site-nav">
-					<li class="site-nav-catalog"><a href="catalog.html">Каталог товаров</a>
-						<ul class="site-nav-catalog-item">
+				<a class="nav__logo"><img src="img/logo.png" alt="Device"></a>
+				<ul class="nav__list">
+					<li class="nav__list__catalog"><a href="catalog.html">Каталог товаров<span class="nav__list__catalog__icon"></span></a>
+						<ul class="nav__list__catalog__list">
 							<li><a href="catalog.html">Виртуальная реальность</a></li>
 							<li><a href="catalog.html">Моноподы для селфи</a></li>
 							<li><a href="catalog.html">Экшн-камеры</a></li>
@@ -112,34 +112,34 @@
 					</div>
 				</div>
 				<ul class="pagination">
-					<li class="pagination__item"><a href="#">Назад</a></li>
+					<li class="pagination__item _active"><a href="#">Назад</a></li>
 					<li class="pagination__item _active"><a href="#">1</a></li>
 					<li class="pagination__item"><a href="#">2</a></li>
 					<li class="pagination__item"><a href="#">3</a></li>
-					<li class="pagination__item"><a href="#">Вперед</a></li>
+					<li class="pagination__item _active"><a href="#">Вперед</a></li>
 				</ul>
 			</div>
 		</main>
 		<footer class="footer">
-				<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
-				<ul class="footer__user-nav">
-					<li><button type="button">Войти</button></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
-				</ul>
-				<p class="footer__address">г. Москва, ул. Строителей, 15</p>
-				<ul class="footer__nav">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<p class="footer__phone">Тел.: +7(495) 495-95-95</p>
-				<ul class="footer__social">
-						<li><a href="#" class="footer__social__button">Фейсбук</a></li>
-						<li><a href="#" class="footer__social__button">Инстаграмм</a></li>
-						<li><a href="#" class="footer__social__button">Твиттер</a></li>
-				</ul>
-				<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer_html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
-			</footer>
+			<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
+			<ul class="footer__user-nav">
+				<li><button type="button" class="profile-footer"><span>Войти</span></button></li>
+				<li><a href="#" class="compare-footer"><span>Сравнить</span></a></li>
+				<li><a href="#" class="basket-footer"><span>Корзина</span></a></li>
+			</ul>
+			<p class="footer__address">г. Москва, ул. Строителей, 15</p>
+			<ul class="footer__nav">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<p class="footer__phone">Тел.: +7(495) 495-95-95</p>
+			<ul class="footer__social">
+				<li class="footer__social__fb"><a href="#"><span class="hidden">Фейсбук</span></a></li>
+				<li class="footer__social__in"><a href="#"><span class="hidden">Инстаграмм</span></a></li>
+				<li class="footer__social__tw"><a href="#"><span class="hidden">Твиттер</span></a></li>
+			</ul>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer_html-academy-logo"><img src="img/html-logo.svg" alt="HTML Academy"></a>
+		</footer>
 	</body>
 </html>
