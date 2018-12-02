@@ -9,11 +9,11 @@
 		<header class="header">
 			<form class="header__search" method="GET"><input class="header__search__input" type="text" name="search" placeholder="Поиск по сайту"></form>
 			<ul class="authorization">
-				<li class="authorization__sign-in"><button type="button" class="authorization__sign-in__button">Войти</button></li>
+				<li class="authorization__sign-in"><button type="button" class="authorization__sign-in__button"><span>Войти</span></button></li>
 			</ul>
 			<ul class="header-user-nav">
-				<li><a href="#" class="compare">Сравнить</a></li>
-				<li><a href="#" class="basket">Корзина</a></li>
+				<li><a href="#" class="compare"><span>Сравнить</span></a></li>
+				<li><a href="#" class="basket"><span>Корзина</span></a></li>
 			</ul>
 			<nav class="nav">
 				<a class="nav__logo"><img src="img/logo.png" alt="Device"></a>
@@ -104,22 +104,22 @@
 				<li><a href="catalog.html"><img src="img/icon-catalog/quadcopter.svg" alt="Квадрокоптеры"><p>Квадрокомптеры</p></a></li>
 			</ul>
 			<div class="services">
-				<h2>Сервисы</h2>
+				<h2 class="hidden">Сервисы</h2>
 				<ul class="services__list">
 					<li class="services__item _active"><a href="#delivery">Доставка</a></li>
-					<li class="services__item"><a href="#guarantee">Гарантия</a></li>
-					<li class="services__item"><a href="#credit">Кредит</a></li>
+					<li class="services__item button"><a href="#guarantee">Гарантия</a></li>
+					<li class="services__item button"><a href="#credit">Кредит</a></li>
 				</ul>
-				<div class="services-tabs-content">
-					<div class="tab-delivery">
+				<div class="services__tabs">
+					<div class="services__tabs__delivery">
 						<h3>Доставка</h3>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</div>
-					<div class="tab-guarantee">
+					<div class="services__tabs__guarantee">
 						<h3>Гарантия</h3>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же..</p>
 					</div>
-					<div class="tab-credit">
+					<div class="services__tabs__credit">
 						<h3>Кредит</h3>
 						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</div>
@@ -135,7 +135,7 @@
 				<h2>О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul>
+				<ul class="list">
 					<li>Деловые Линии</li>
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
@@ -152,9 +152,9 @@
 		<footer class="footer">
 			<a class="footer__logo"><img src="img/logo-yellow.png" alt="Device"></a>
 			<ul class="footer__user-nav">
-				<li><button type="button">Войти</button></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>
+				<li><button type="button" class="sign-in-footer"><span>Войти</span></button></li>
+				<li><a href="#" class="compare-footer"><span>Сравнить</span></a></li>
+				<li><a href="#" class="basket-footer"><span>Корзина</span></a></li>
 			</ul>
 			<p class="footer__address">г. Москва, ул. Строителей, 15</p>
 			<ul class="footer__nav">
