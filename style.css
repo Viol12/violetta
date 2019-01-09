@@ -156,81 +156,75 @@ fieldset {
     list-style: none;
 }
 
-.header-user-nav {
+.header__user-nav {
     list-style: none;
 }
 
-.header-user-nav a {
+.header__user-nav a {
     list-style: none;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     color: #000000;
 }
 
-.sign-out {
+.authorization__sign-out button{
     border: none;
     background-color: transparent;
 }
 
-.compare,
-.basket,
-.profile {
+.header__compare,
+.header__basket,
+.authorization__sign-in {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.compare span,
-.basket span,
-.profile span {
+.header__compare span,
+.header__basket span,
+.authorization__sign-in span {
     margin-left: 20px;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     color: #000000;
 }
 
-.compare:hover,
-.basket:hover,
-.profile:hover {
+.header__compare:hover,
+.header__basket:hover,
+.authorization__sign-in:hover {
     opacity: 0.6;
 }
 
-.compare:active,
-.basket:active,
-.profile:active {
+.header__compare:active,
+.header__basket:active,
+.authorization__sign-in:active {
     opacity: 0.3;
 }
 
-.profile {
+.authorization__sign-in {
     border: none;
     background-color: transparent;
 }
 
-.profile::before {
+.authorization__sign-in::before {
     content: '';
     height: 12px;
     width: 13px;
     background: url('img/svg/user.svg') no-repeat;
 }
 
-.compare::before {
+.header__compare::before {
     content: '';
     height: 10px;
     width: 10px;
     background: url('img/svg/compare.svg') no-repeat;
 }
 
-.basket::before {
+.header__basket::before {
     content: '';
     height: 12px;
     width: 12px;
     background: url('img/svg/cart.svg') no-repeat;
-}
-
-.nav {
-    font-family: 'Gilroy-ExtraBold';
-    font-size: 18px;
-    color: #000000;
 }
 
 .nav__list {
@@ -238,7 +232,7 @@ fieldset {
 }
 
 .nav__list a {
-    font-family: inherit;
+    font-family: 'Gilroy-ExtraBold';
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #000000;
@@ -254,20 +248,20 @@ fieldset {
     opacity: 0.3;
 }
 
-.nav__list__catalog__list {
+.nav__subitem {
     list-style: none;
 }
 
-.nav__list__catalog__list a {
+.nav__subitem a {
     list-style: none;
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     text-transform: none;
     letter-spacing: 0;
     font-size: 15px;
     color: #000000;
 }
 
-.nav__list__catalog__icon {
+.nav__icon-plus {
     position: absolute;
     margin: 0 8px;
     margin-top: 3px;
@@ -277,8 +271,8 @@ fieldset {
     background-color: #b8a974;
 }
 
-.nav__list__catalog__icon::after {
-    content: "";
+.nav__icon-plus::after {
+    content: '';
     position: absolute;
     top: 7px;
     left: -7px;
@@ -294,7 +288,7 @@ fieldset {
 }
 
 .header__search::before {
-    content: "";
+    content: '';
     height: 16px;
     width: 16px;
     margin-right: 20px;
@@ -309,7 +303,7 @@ fieldset {
 /* Breadcrumbs */
 
 .breadcrumbs__item {
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     font-size: 14px;
     color: #000000;
     list-style: none;
@@ -340,13 +334,13 @@ fieldset {
 }
 
 .slider-title {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 47px;
     color: #000000;
 }
 
 .slider-text {
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     line-height: 30px;
     font-size: 15px; 
 }
@@ -356,12 +350,12 @@ fieldset {
 }
 
 .slider-list li span {
-    font-family: "Gilroy-Light", sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
     font-size: 36px;
 }
 
 .slider-list li p {
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     font-size: 13px;
 }
 
@@ -378,7 +372,7 @@ fieldset {
 }
 
 .catalog-popular li::before{
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     margin: 0;
@@ -397,7 +391,7 @@ fieldset {
 }
 
 .catalog-popular li p {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 18px;
     color: inherit;
 }
@@ -411,7 +405,7 @@ fieldset {
 /* Services */
 
 .services::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     height: 286px;
@@ -424,7 +418,7 @@ fieldset {
 }
 
 .services__item a {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 18px;
     color: #000000;
 }
@@ -436,7 +430,7 @@ fieldset {
 }
 
 .services__item a {
-    font-family: "Golroy-ExtraBold", sans-serif;
+    font-family: 'Golroy-ExtraBold', sans-serif;
     font-size: 18px;
     display: block;
     width: 160px;
@@ -459,13 +453,13 @@ fieldset {
 }
 
 .services__item:hover::after {
-    content: "";
+    content: '';
     height: 40px;
     transition: 0.3s;
 }
 
 .services__item:active::after {
-    content: "";
+    content: '';
     height: 40px;
     width: 100%;
     background-color: #000000;
@@ -480,13 +474,13 @@ fieldset {
 }
 
 .services__tabs p{
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     line-height: 30px;
     font-size: 15px; 
 }
 
 .services__tabs__delivery::before {
-    content: "";
+    content: '';
     background: url('img/svg/delivery.svg') no-repeat;
     position: absolute;
     margin-left: 680px;
@@ -495,7 +489,7 @@ fieldset {
 }
 
 .services__tabs__guarantee::before {
-    content: "";
+    content: '';
     background: url('img/svg/warranty.svg') no-repeat;
     position: absolute;
     margin-left: 680px;
@@ -504,7 +498,7 @@ fieldset {
 }
 
 .services__tabs__credit::before {
-    content: "";
+    content: '';
     background: url('img/svg/credit.svg') no-repeat;
     position: absolute;
     margin-left: 680px;
@@ -529,7 +523,7 @@ fieldset {
 }
 
 .list-delivery {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 16px;
 }
 
@@ -558,7 +552,7 @@ fieldset {
 }
 
 .filter__title p{
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -566,28 +560,28 @@ fieldset {
 }
 
 .sort__item {
-    font-family: "OpenSans-Regular", sans-serif;
+    font-family: 'OpenSans-Regular', sans-serif;
     font-size: 14px;
     color: #000000;
     opacity: 0.3;
 }
 
 .sort__item._active {
-    font-family: "OpenSans-Regular", sans-serif;
+    font-family: 'OpenSans-Regular', sans-serif;
     font-size: 14px;
     color: #000000;
     opacity: 1;
 }
 
 .sort__title {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .filter__form__category label {
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     font-size: 14px;
     color: #000000;
 }
@@ -596,13 +590,13 @@ fieldset {
 /* Card prew */
 
 .catalog-prew__title {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 18px;
     color: #000000;
 }
 
 .catalog-prew__price {
-    font-family: "Gilroy-Light", sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
     font-size: 16px;
     color: #464646;
 }
@@ -610,7 +604,7 @@ fieldset {
 .catalog-prew__compare {
     border: none;
     background-color: transparent;
-    font-family: "OpenSans-Light", sans-serif;
+    font-family: 'OpenSans-Light', sans-serif;
     font-size: 13px;
     color: #000000;
     opacity: 0.6;
@@ -625,7 +619,7 @@ fieldset {
 }
 
 .filter__form legend {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 18px;
     color: #000000;
     text-transform: uppercase;
@@ -642,7 +636,7 @@ fieldset {
 .pagination {
     list-style: none;
     display: flex;
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
@@ -705,41 +699,41 @@ fieldset {
     list-style: none;
 }
 
-.profile-footer,
-.compare-footer,
-.basket-footer {
+.footer__sign-in,
+.footer__compare,
+.footer__basket {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.compare-footer span,
-.basket-footer span,
-.profile-footer span{
-    font-family: "OpenSans-Light", sans-serif;
+.footer__compare span,
+.footer__basket span,
+.footer__sign-in span{
+    font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     color: #ffffff;
 }
 
-.compare-footer:hover,
-.basket-footer:hover,
-.profile-footer:hover {
+.footer__compare:hover,
+.footer__basket:hover,
+.footer__sign-in:hover {
     opacity: 0.6;
 }
 
-.compare-footer:active,
-.basket-footer:active,
-.profile-footer:active {
+.footer__compare:active,
+.footer__basket:active,
+.footer__sign-in:active {
     opacity: 0.3;
 }
 
-.profile-footer {
+.footer__sign-in {
     border: none;
     background-color: transparent;
 }
 
-.profile-footer::before {
-    content: ""; 
+.footer__sign-in::before {
+    content: ''; 
     padding: 0;
     margin-right: 20px; 
     height: 12px;
@@ -747,31 +741,43 @@ fieldset {
     background: url('img/svg/user-footer.svg') no-repeat;
 }
 
-.compare-footer::before {
-    content: "";
+.footer__compare::before {
+    content: '';
     margin-right: 20px; 
     height: 10px;
     width: 10px;
     background: url('img/svg/compare-footer.svg') no-repeat;
 }
 
-.basket-footer::before {
-    content: "";
+.footer__basket::before {
+    content: '';
     margin-right: 20px; 
     height: 12px;
     width: 12px;
     background: url('img/svg/cart-footer.svg') no-repeat;
 }
 
+.footer__address {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
 .footer__nav {
     list-style: none;
-    font-family: "Gilroy-ExtraBold";
+    font-family: 'Gilroy-ExtraBold';
     font-size: 18px;
 }
 
 .footer__nav a {
     color: #ffffff;
     letter-spacing: 2px;
+}
+
+.footer__phone {
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 .footer__social {
@@ -790,20 +796,20 @@ fieldset {
     opacity: 0.1;
 }
 
-.footer__social__fb{
-    background: url("img/svg/fb.svg") no-repeat;
+.fb{
+    background: url('img/svg/fb.svg') no-repeat;
     height: 32px;
     width: 32px;
 }
 
-.footer__social__in{
-    background: url("img/svg/instagram.svg") no-repeat;
+.in{
+    background: url('img/svg/instagram.svg') no-repeat;
     height: 32px;
     width: 32px;
 }
 
-.footer__social__tw{
-    background: url("img/svg/twitter.svg") no-repeat;
+.tw{
+    background: url('img/svg/twitter.svg') no-repeat;
     height: 32px;
     width: 32px;
 }
